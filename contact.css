@@ -127,3 +127,7 @@ form {
     background-color: var(--nav_hover);
     border: none;
 }
+
+#modalBody {
+    font-size: 1.6rem;
+}
