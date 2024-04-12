@@ -8,6 +8,5 @@ submitButton.addEventListener('click', () => {
         modalTitle.innerHTML = `Sorry ${firstName.value} ${lastName.value}!`;
     } else {
         modalTitle.innerHTML = 'Sorry!';
-    }
-    
+    };
 });
