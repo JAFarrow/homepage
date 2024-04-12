@@ -29,12 +29,15 @@ header {
     background-color: var(--header_bkg);
 }
 
-header h1 {
-    color: var(--console_text);
-    font-size: 3.6rem;
+h1, p, a {
     font-family: "VT323", monospace;
     font-weight: 400;
     font-style: normal;
+}
+
+header h1 {
+    color: var(--console_text);
+    font-size: 3.6rem;
 }
 
 nav a {
@@ -43,9 +46,6 @@ nav a {
     padding: 0 1.2rem 0 1.2rem;
     font-weight: bold;
     text-decoration: none;
-    font-family: "VT323", monospace;
-    font-weight: 400;
-    font-style: normal;
 }
 
 nav a:hover {
@@ -61,7 +61,7 @@ main {
     justify-items: center;
     align-items: center;
     background-color: var(--page_bkg);
-    grid-auto-flow: dense;
+    grid-auto-flow: row;
 }
 
 .console {
@@ -92,9 +92,6 @@ main {
 .consoleBody p {
     color: var(--console_text);
     font-size: 1.6rem;
-    font-family: "VT323", monospace;
-    font-weight: 400;
-    font-style: normal;
 }
 
 #bottomConsole {
