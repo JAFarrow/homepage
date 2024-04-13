@@ -1,0 +1,30 @@
+HTML Tags:
+
+<header>
+<h1>
+<nav>
+<a>
+<div>
+<button>
+<p>
+<main>
+<label>
+<input>
+
+CSS Properties:
+
+font-size
+width
+height
+font-family
+font-weight
+
+How I used Bootstrap:
+
+I used the bootstrap input and button components for my contact page,
+as well as a modal to alert the user that the contact page does not actually work.
+
+How I used Javascript:
+
+I used javascript to access the values in my input fields in order to provide
+a more personalized modal.
