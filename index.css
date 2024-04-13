@@ -64,6 +64,21 @@ main {
     grid-auto-flow: row;
 }
 
+@media (max-width: 500px) {
+    html {
+        font-size: 6px;
+    }
+    
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+    }
+
+    #rightConsole {
+        display: none;
+    }
+}
+
 .console {
     width: 90%;
     height: 85%;

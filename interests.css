@@ -59,6 +59,10 @@ main {
 }
 
 @media (max-width: 500px) {
+    html {
+        font-size: 6px;
+    }
+    
     main {
         height: auto;
         grid-template-columns: 1fr;

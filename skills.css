@@ -8,18 +8,16 @@
 
 html {
     font-size: 10px;
-    width: 100%;
-    height: 100%;
 }
 
 body {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
 }
 
 header {
     width: 100%;
-    height: 12%;
+    height: 12vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -52,7 +50,7 @@ nav a:hover {
 
 main {
     width: 100%;
-    height: 88%;
+    height: 88vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 3fr 3fr;
@@ -60,6 +58,38 @@ main {
     align-items: center;
     background-color: var(--page_bkg);
     grid-auto-flow: row;
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 6px;
+  }
+
+  main {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr 3fr 3fr 3fr;
+    grid-auto-flow: column;
+  }
+
+  #bodyHeading {
+    grid-column: span 2;
+  }
+
+  .flipCardBack h5 {
+    font-size: 1.2rem;
+    padding-top: 1rem;
+  }
+
+  .flipCardBack p {
+    font-size: .8rem;
+    padding: 1rem 1rem 0 1rem;
+  }
+}
+
+@media (501px <= width <= 800px) {
+  html {
+    font-size: 8px;
+  }
 }
 
 #bodyHeading {
